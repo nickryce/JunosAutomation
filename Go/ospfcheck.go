@@ -17,8 +17,8 @@ type OSPFOutput struct {
 type OSPFNeighborEntry struct {
 	NeighborAddress 	string `xml:"neighbor-address"`
 	InterfaceName 		string `xml:"interface-name"`
-	OSPFState			string `xml:"ospf-neighbor-state"`
-	NeighborID			string `xml:"neighbor-id"`
+	OSPFState   		string `xml:"ospf-neighbor-state"`
+	NeighborID   		string `xml:"neighbor-id"`
 	NeighborPriority	string `xml:"neighbor-priority"`
 	ActivityTimer		string `xml:"activity-timer"`
 }
