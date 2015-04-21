@@ -23,13 +23,6 @@ type OSPFNeighborEntry struct {
 	ActivityTimer		string `xml:"activity-timer"`
 }
 
-//type OSPFConfig struct {
-//	AreaConfig []NeighborConfig `xml:"area > name"`
-//}
-
-//type NeighborConfig struct {
-
-//}
 
 var hostname = flag.String("hostname", "", "Hostname of the device you wish to connect to")
 
