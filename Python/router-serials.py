@@ -3,7 +3,7 @@ from jnpr.junos import Device
 import getpass
 
 
-#Get username and password
+#Get username and password to log into the device
 user = raw_input("\n\nEnter your username: ")
 password = getpass.getpass(prompt="Enter your password: ")
 
@@ -20,7 +20,7 @@ for router in hosts:
 	except:
     		print "You've gone and broken something!"
 
-    	print(dev.facts['hostname']) + " : " + (dev.facts['serialnumber'])
+    	print(dev.facts['hostname']) + " :  " + (dev.facts['serialnumber'])
 
 
     	dev.close()
